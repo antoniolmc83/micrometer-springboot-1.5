@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: micrometeralmc
+
+
+management:
+  metrics:
+    export:
+      datadog:
+        api-key: 8205277df98422c5f09bb07d45adaef2
+        application-key: 84b044b81bff7f8b06c42f90549c38f90dec287e
+        host-tag: ${spring.application.name}.domain.tld
+        step: 10s
+
+
+server:
+  port: 8091
+#management.security.enabled=false
