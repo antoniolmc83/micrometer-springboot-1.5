@@ -17,3 +17,7 @@ management:
 server:
   port: 8091
 #management.security.enabled=false
+
+logging:
+  level:
+    io.micrometer: DEBUG
