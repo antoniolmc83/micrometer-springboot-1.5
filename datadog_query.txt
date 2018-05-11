@@ -1,0 +1,52 @@
+------------------------
+cumsum(sum:headers.hello{application:micrometer-youtube-example} by {callerid}.as_count())
+
+{
+  "viz": "timeseries",
+  "requests": [
+    {
+      "q": "cumsum(sum:headers.hello{application:micrometer-youtube-example} by {callerid}.as_count())",
+      "type": "line",
+      "style": {
+        "palette": "dog_classic",
+        "type": "solid",
+        "width": "normal"
+      },
+      "conditional_formats": [],
+      "aggregator": "avg"
+    }
+  ],
+  "autoscale": true
+}
+
+-----------------------
+
+-----------------------
+cumsum(sum:techprimers.hello.request.count{application:micrometer-youtube-example}.as_count())
+
+{
+  "viz": "timeseries",
+  "requests": [
+    {
+      "q": "cumsum(sum:techprimers.hello.request.count{application:micrometer-youtube-example}.as_count())",
+      "type": "line",
+      "style": {
+        "palette": "dog_classic",
+        "type": "solid",
+        "width": "normal"
+      },
+      "conditional_formats": [],
+      "aggregator": "avg"
+    }
+  ],
+  "autoscale": true
+}
+
+--------------------------
+
+
+
+sum:headers.hello.timer.avg{application:micrometer-youtube-example}
+
+
+sum:headers.hello.timer.sum{application:micrometer-youtube-example}.as_count()
